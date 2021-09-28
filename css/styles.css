@@ -107,7 +107,6 @@ body {
   box-shadow: 0 0 60px rgba(255, 160, 60, 0.4); }
 
 .planet {
-  background-color: #202020;
   background-repeat: no-repeat;
   background-size: cover;
   animation-iteration-count: infinite;
@@ -649,7 +648,7 @@ body {
   content: '86,677 km/h'; }
 
 .set-speed #jupiter dl.infos dd:after {
-  content: '47,002 km/h'; }
+  content: '50,601 km/h'; }
 
 .set-speed #saturn dl.infos dd:after {
   content: '34,701 km/h'; }
@@ -680,7 +679,7 @@ body {
   content: '21,296 km'; }
 
 .set-size #jupiter dl.infos dd:after {
-  content: '439,263 km'; }
+  content: '116,325,163  km'; }
 
 .set-size #saturn dl.infos dd:after {
   content: '365,882 km'; }
