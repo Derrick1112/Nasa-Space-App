@@ -1,16 +1,1 @@
-# Ignore files
-/node_modules/
-
-#/dist
-#dist/*.map
-
-**/*.map
-.eslintcache
-package-lock.json
-# Logs
-logs
-*.log
-npm-debug.log*
-# IDE
-.idea/**
-/.idea/
+.DS_Store
