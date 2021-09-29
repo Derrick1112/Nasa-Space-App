@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <title dir="ltr">3D CSS Solar System</title>
+    <title dir="ltr">Meet Parker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/Customstyles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body class="opening hide-UI view-2D zoom-large data-close controls-close">
@@ -20,7 +22,7 @@
       <a class="sun" title="sun" href="#sunspeed">Sun</a>
       <a class="jupiter" title="jupiter" href="#jupiterspeed">Parker Solar Probe</a>
     </div>
-    <div id="controls">
+    <div id="controls" >
       <label class="set-view">
         <input type="checkbox">
       </label>
@@ -39,7 +41,29 @@
         <input type="radio" class="set-distance" name="scale">
         <span>Distance</span>
       </label>
+      <div style="overflow-y: scroll;">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Latest Updates from Parker Solar Probe</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Updates from NASA</h6>
+            <p class="card-text"><strong>30/9/2021-5:00AM</strong> - Parker has reported odd solar winds. Cell towers may be affected!</p>
+            <p class="card-text"><strong>30/9/2021-10:00AM</strong> - Maintanence work ongoing!</p>
+            <p class="card-text"><strong>30/9/2021-1:00PM</strong> - Successful Ninth Solar Flyby for Parker Solar Probe</p>
+            <a href="https://www.nasa.gov/content/goddard/parker-solar-probe" target="_blank" class="card-link">More Info</a>
+          </div>
+        </div>
+        <br/>
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Latest Light Data</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Updates from Parker Solar Probe</h6>
+            <p><img style="width: 100px; height: 100px;" src="https://www.nasa.gov/sites/default/files/thumbnails/image/01_wispr-crop.png" alt="latest image"/></p>
+            <a href="https://www.nasa.gov/content/goddard/parker-solar-probe" target="_blank" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
     </div>
+    
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
         <div id="solar-system" class="earth">
@@ -62,13 +86,47 @@
           </div>
           
         </div>
-        <div class="card" style="width: 25rem; height:100%;">
+        <div class="card" style="width: 20%; height:100%; overflow-y: scroll;">
           <div class="card-body">
             <img src="img/p-parker.png" alt="parker solar probe image" style="width: 200px;height: 200px;"/>
-            <h5 class="card-title">What is the Parker Solar Probe?</h5>
+            <h5 class="card-title"><strong>What is the Parker Solar Probe?</strong></h5>
             <p class="card-text">NASA's historic Parker Solar Probe mission is revolutionizing our understanding of the Sun, where changing conditions can propagate out into the solar system, affecting Earth and other worlds. Parker Solar Probe travels through the Sun’s atmosphere, closer to the surface than any spacecraft before it, facing brutal heat and radiation conditions to provide humanity with the closest-ever observations of a star.</p>
+            <h4>What's trending on Twitter? <i class="fa fa-twitter" style="font-size:36px"></i></h4>
+              <button class="btn btn-primary" onclick="filterTweetsSolarProbe()">#ParkerSolarProbe</button>
+              <button class="btn btn-primary" onclick="filterTweetsProbe2()">#ParkerRevolution</button>
+                <div class="media block-update-card" id="parkersolarprobetweet">
+                  <a class="pull-left" href="#">
+                    <img class="media-object update-card-MDimentions" src="https://pbs.twimg.com/profile_images/1409429964710105089/-ZI94Ari_400x400.jpg" alt="...">
+                  </a>
+                  <div class="media-body update-card-body" >
+                    <h4 class="media-heading"><strong>Lando Norris</strong> @landoNorris</h4>
+                    <p>The #ParkerSolarProbe is such a magnificient sight!</p>
+                  </div>
+                </div>
+
+                <div class="media block-update-card" id="parkersolarprobetweet">
+                  <a class="pull-left" href="#">
+                    <img class="media-object update-card-MDimentions" src="https://dazedimg-dazedgroup.netdna-ssl.com/640/azure/dazed-prod/1300/6/1306452.jpg" alt="...">
+                  </a>
+                  <div class="media-body update-card-body">
+                    <h4 class="media-heading"><strong>James Charles</strong> @jCharles</h4>
+                    <p>Watch out! Solar winds were detected recently! #ParkerSolarProbe</p>
+                  </div>
+                </div>
+                <div class="media block-update-card" id="ParkerRevolution">
+                  <a class="pull-left" href="#">
+                    <img class="media-object update-card-MDimentions" src="https://cdn.vox-cdn.com/thumbor/f-kLehFRin8YfrmLC9GVERuQTPg=/0x0:2530x3354/1200x800/filters:focal(882x1220:1286x1624)/cdn.vox-cdn.com/uploads/chorus_image/image/69295916/1309409409.0.jpg" alt="...">
+                  </a>
+                  <div class="media-body update-card-body">
+                    <h4 class="media-heading"><strong>Jake Paul</strong> @JPaul</h4>
+                    <p>Did you know? Today was the first day #ParkerSolarProbe orbitted the sun! #ParkerRevolution</p>
+                  </div>
+                </div>
+            </div>
           </div>
+          
         </div>
+        
       </div>
     </div>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
@@ -77,6 +135,7 @@
       document.write(unescape("%3Cscript src='js/jquery.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
     </script>
+    <script src="js/CustomJS.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
