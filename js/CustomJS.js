@@ -8,3 +8,7 @@ function filterTweetsProbe2 (){
     $('.block-update-card').filter('#ParkerRevolution').show();
 }
 
+function myFunction() {
+  	var popup = document.getElementById("card-parker");
+  	popup.classList.toggle("show");
+}

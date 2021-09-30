@@ -64,9 +64,12 @@
     cursor: pointer;
   }
 
+.card-parker{
+	visibility: hidden;
+}
 
 .card-parker .card-body::after{
-	content:"";
+	position:absolute;
 }
 
 .card-parker .show{
@@ -129,7 +132,7 @@
 ::-webkit-scrollbar-thumb {
   background: #606060; 
   border-radius: 50px;
-	height: 10px
+	height: 10px;
 }
 
 /* Handle on hover */
