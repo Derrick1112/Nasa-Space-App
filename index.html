@@ -22,7 +22,7 @@
     </div>
     <div id="data">
       <a class="sun" title="sun" href="#sunspeed">Sun</a>
-      <a class="jupiter" title="jupiter" href="#jupiterspeed" onClick="myFunction()">Parker Solar Probe</a>
+      <a class="jupiter"  title="jupiter" href="#jupiterspeed" onClick="myFunction()">Parker Solar Probe</a>
     </div>
     <div id="controls" >
       <label class="set-view">
@@ -43,8 +43,8 @@
         <input type="radio" class="set-distance" name="scale">
         <span>Distance</span>
       </label>
-      <div style="overflow-y: scroll;">
-        <div class="card-parker" id="card-parker" style="width: 18rem;">
+      <div style="overflow-y: scroll;" id="card-parker-2">
+        <div style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Latest Updates from Parker Solar Probe</h5>
             <h6 class="card-subtitle mb-2 text-muted">Updates from NASA</h6>
@@ -55,7 +55,7 @@
           </div>
         </div>
         <br/>
-        <div class="card-parker" id="card-parker" style="width: 18rem;">
+        <div  style="width: 18rem;">
           <div class="card-body">
             <h5 class="card-title">Latest Light Data</h5>
             <h6 class="card-subtitle mb-2 text-muted">Updates from Parker Solar Probe</h6>
@@ -88,7 +88,7 @@
           </div>
           
         </div>
-        <div class="card-parker" id="card-parker" style="width: 20%; height:100%; overflow-y: scroll;">
+        <div id="card-parker" class="show-hide-menu" style="width: 20%; height:100%; overflow-y: scroll;">
           <div class="card-body">
             <img src="img/p-parker.png" alt="parker solar probe image" style="width: 200px;height: 200px;"/>
             <h5 class="card-title"><strong>What is the Parker Solar Probe?</strong></h5>

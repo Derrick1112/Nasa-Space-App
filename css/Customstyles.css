@@ -64,19 +64,21 @@
     cursor: pointer;
   }
 
-.card-parker{
+#card-parker,#card-parker-2{
 	visibility: hidden;
 }
 
-.card-parker .card-body::after{
+#card-parker.card-body::after,#card-parker-2.card-body::after{
 	position:absolute;
 }
 
-.card-parker .show{
+#card-parker.show,#card-parker-2.show{
 	visibility: visible;
   	-webkit-animation: fadeIn 1s;
   	animation: fadeIn 1s;
 }
+
+
 .card-body{
 	color:white;
 }
