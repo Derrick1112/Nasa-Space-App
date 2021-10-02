@@ -23,7 +23,8 @@
     <div id="data">
       <a class="sun" title="sun" href="#sunspeed">Sun</a>
       <a class="jupiter"  title="jupiter" href="#jupiterspeed" onClick="myFunction()">Parker Solar Probe</a>
-      <a class="stereo"  title="stereo" href="#stereospeed" onClick="ChangeToStereoInfo()">Stereo-A</a>    
+      <a class="stereo"  title="stereo" href="#stereospeed" onClick="ChangeToStereoInfo()">Stereo-A</a>
+	  <a class="saturn"  title="osiris" href="#saturnspeed" onClick="ChangeToOsirisInfo()">OSIRIS-REx</a>
     </div>
     <div id="controls" >
       <label class="set-view">
@@ -87,6 +88,27 @@
         </div>
       </div>    
     </div>
+	<div style="overflow-y: scroll;" id="card-osiris-2">
+        <div style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Mission status updates for OSIRIS-REx</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Updates from NASA</h6>
+            <p class="card-text"><strong>Jun 04, 2021</strong> - NASA’s OSIRIS-REx spacecraft is 328,000 miles, or 528,000 kilometers, away from the asteroid Bennu, having fired its engines on May 10 to initiate a return trip to Earth. The spacecraft is on track to deliver an asteroid sample to Earth on September 24, 2023.</p>
+            <p class="card-text"><strong>Mar 29, 2021</strong> - The OSIRIS-REx spacecraft continues to slowly approach asteroid Bennu – traveling approximately 6 cm/s – and is currently about 30 km from the asteroid.</p>
+            <p class="card-text"><strong>Mar 15, 2021</strong> - OSIRIS-REx continues operating in the Post-TAG Observation phase, as the spacecraft journeys back to Bennu for the Apr. 7 final flyover. On Mar. 6, the spacecraft successfully executed the second propulsive maneuver of 34 cm/s to adjust course as OSIRIS-REx approaches the asteroid. The next maneuver is scheduled for Mar. 20.</p>
+            <a href="https://www.nasa.gov/osiris-rex" target="_blank" class="card-link">More Info</a>
+          </div>
+        </div>
+        <br/>
+        <div style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">Latest Light Data</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Updates from OSIRIS-REx</h6>
+            <p><img style="width: 100px; height: 100px;" src="https://www.nasa.gov/sites/default/files/thumbnails/image/twelve-image_polycam_mosaic_12-2-18.png" alt="latest image"/></p>
+            <a href="https://www.nasa.gov/osiris-rex" target="_blank" class="card-link">More Info</a>
+          </div>
+        </div>
+      </div>
     
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
@@ -112,6 +134,17 @@
               </div>
             </div>
           </div>
+			
+		  <div id="saturn" class="orbit">
+            <div class="pos">
+              <div class="planet">
+                <dl class="infos">
+                  <dt>OSIRIS-REx</dt>
+                  <dd><span></span></dd>
+                </dl>
+              </div>
+            </div>
+          </div>
 		
           <div id="sun">
             <dl class="infos">
@@ -123,7 +156,7 @@
         </div>
         <div id="card-parker" class="show-hide-menu" style="width: 20%; height:100%; overflow-y: scroll;">
           <div class="card-body">
-            <img id="probe-img" src="img/p-parker.png" alt="parker solar probe image" style="width: 200px;height: 200px;"/>
+            <img id="probe-img" src="img/p-parker.png" alt="parker solar probe " style="width: 200px;height: 200px;"/>
             <h5 class="card-title" id="probe-title"><strong>What is the Parker Solar Probe?</strong></h5>
             <p class="card-text" id="probe-text">NASA's historic Parker Solar Probe mission is revolutionizing our understanding of the Sun, where changing conditions can propagate out into the solar system, affecting Earth and other worlds. Parker Solar Probe travels through the Sun’s atmosphere, closer to the surface than any spacecraft before it, facing brutal heat and radiation conditions to provide humanity with the closest-ever observations of a star.</p>
             <h4>What's trending on Twitter? <i class="fa fa-twitter" style="font-size:36px"></i></h4>
@@ -199,6 +232,34 @@
             </div>
           </div>
         </div>
+		<!--osiris-->
+		<div id="card-osiris" class="show-hide-menu" style="width: 20%; height:100%; overflow-y: scroll;">
+			<div class="card-body">
+            
+            <img src="img/p-OSIRIS.png" alt="OSIRIS-REx image" style="width: 200px;height: 200px;"/>
+            <h5 class="card-title"><strong>What is the OSIRIS-REx?</strong></h5>
+            <p class="card-text">Launched on Sept. 8, 2016, the Origins, Spectral Interpretation, Resource Identification, Security-Regolith Explorer (OSIRIS-REx) spacecraft traveled to a near-Earth asteroid called Bennu (formerly 1999 RQ36), and collected a sample of the of rocks and material from the surface that it will return to Earth in 2023. The mission will help scientists investigate how planets formed and how life began, as well as improve our understanding of asteroids that could impact Earth.</p>
+			  <h4>What's trending on Twitter? <i class="fa fa-twitter" style="font-size:36px"></i></h4>
+              <button class="btn btn-primary" onclick="filterTweetsSolarProbe()">#ParkerSolarProbe</button>
+              <button class="btn btn-primary" onclick="filterTweetsProbe2()">#ParkerRevolution</button>
+                <div class="media block-update-card" id="parkersolarprobetweet">
+                <div class="media block-update-card" id="osiristweet">
+                  <a class="pull-left" href="#">
+                    <img class="media-object update-card-MDimentions" src="https://pbs.twimg.com/profile_images/1409429964710105089/-ZI94Ari_400x400.jpg" alt="...">
+                  </a>
+@@ -178,7 +200,7 @@ <h4 class="media-heading"><strong>Lando Norris</strong> @landoNorris</h4>
+                  </div>
+                </div>
+
+                <div class="media block-update-card" id="parkersolarprobetweet">
+                <div class="media block-update-card" id="osiristweet">
+                  <a class="pull-left" href="#">
+                    <img class="media-object update-card-MDimentions" src="https://dazedimg-dazedgroup.netdna-ssl.com/640/azure/dazed-prod/1300/6/1306452.jpg" alt="...">
+                  </a>
+@@ -198,9 +220,8 @@ <h4 class="media-heading"><strong>Jake Paul</strong> @JPaul</h4>
+                </div>
+            </div>
+          </div>
         
       </div>
     </div>

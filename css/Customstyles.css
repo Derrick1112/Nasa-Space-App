@@ -64,21 +64,25 @@
     cursor: pointer;
   }
 
-#card-parker,#card-parker-2,#card-parker-3,#card-parker-4{
+#card-parker,#card-parker-2,#card-parker-3,#card-parker-4,#card-osiris, #card-osiris-2{
 	visibility: hidden;
 }
 
 #card-parker.card-body::after,
 #card-parker-2.card-body::after,
 #card-parker.card-body-3::after,
-#card-parker.card-body-4::after{
+#card-parker.card-body-4::after,
+#card-osiris.card-body::after,
+#card-osiris.card-body-2::after{
 	position:absolute;
 }
 
 #card-parker.show,
 #card-parker-2.show,
 #card-parker-3.show,
-#card-parker-4.show{
+#card-parker-4.show,
+#card-osiris.show,
+#card-osiris-2.show{
 	visibility: visible;
   	-webkit-animation: fadeIn 1s;
   	animation: fadeIn 1s;
