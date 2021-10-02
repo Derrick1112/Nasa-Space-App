@@ -1,4 +1,4 @@
-3D CSS Solar System 
+3D Web-based Space Probe Learning Platform
 ===================
 
-Solar System data visualisation done in HTML/CSS and a bit of Javascript.
+This is a visualisation of the NASA space probes built using HTML, CSS and JS.
