@@ -23,7 +23,7 @@
     <div id="data">
       <a class="sun" title="sun" href="#sunspeed">Sun</a>
       <a class="jupiter"  title="jupiter" href="#jupiterspeed" onClick="myFunction()">Parker Solar Probe</a>
-      <a class="stereo"  title="stereo" href="#stereospeed" onClick="myFunction2()">Stereo-A</a>    
+      <a class="stereo"  title="stereo" href="#stereospeed" onClick="ChangeToStereoInfo()">Stereo-A</a>    
     </div>
     <div id="controls" >
       <label class="set-view">
@@ -47,7 +47,7 @@
       <div style="overflow-y: scroll;" id="card-parker-2">
         <div style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Latest Updates from Parker Solar Probe</h5>
+            <h5 class="card-title" id="Updates-Probe">Latest Updates from Parker Solar Probe</h5>
             <h6 class="card-subtitle mb-2 text-muted">Updates from NASA</h6>
             <p class="card-text"><strong>30/9/2021-5:00AM</strong> - Parker has reported odd solar winds. Cell towers may be affected!</p>
             <p class="card-text"><strong>30/9/2021-10:00AM</strong> - Maintanence work ongoing!</p>
@@ -58,9 +58,9 @@
         <br/>
         <div  style="width: 18rem;">
           <div class="card-body">
-            <h5 class="card-title">Latest Light Data</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Updates from Parker Solar Probe</h6>
-            <p><img style="width: 100px; height: 100px;" src="https://www.nasa.gov/sites/default/files/thumbnails/image/01_wispr-crop.png" alt="latest image"/></p>
+            <h5 class="card-title" >Latest Light Data</h5>
+            <h6 class="card-subtitle mb-2 text-muted" id="Updates-Probe">Updates from Parker Solar Probe</h6>
+            <p><img id="Updates-img-Probe" style="width: 100px; height: 100px;" src="https://www.nasa.gov/sites/default/files/thumbnails/image/01_wispr-crop.png" alt="latest image"/></p>
             <a href="https://www.nasa.gov/content/goddard/parker-solar-probe" target="_blank" class="card-link">More Info</a>
           </div>
         </div>
@@ -123,9 +123,9 @@
         </div>
         <div id="card-parker" class="show-hide-menu" style="width: 20%; height:100%; overflow-y: scroll;">
           <div class="card-body">
-            <img src="img/p-parker.png" alt="parker solar probe image" style="width: 200px;height: 200px;"/>
-            <h5 class="card-title"><strong>What is the Parker Solar Probe?</strong></h5>
-            <p class="card-text">NASA's historic Parker Solar Probe mission is revolutionizing our understanding of the Sun, where changing conditions can propagate out into the solar system, affecting Earth and other worlds. Parker Solar Probe travels through the Sun’s atmosphere, closer to the surface than any spacecraft before it, facing brutal heat and radiation conditions to provide humanity with the closest-ever observations of a star.</p>
+            <img id="probe-img" src="img/p-parker.png" alt="parker solar probe image" style="width: 200px;height: 200px;"/>
+            <h5 class="card-title" id="probe-title"><strong>What is the Parker Solar Probe?</strong></h5>
+            <p class="card-text" id="probe-text">NASA's historic Parker Solar Probe mission is revolutionizing our understanding of the Sun, where changing conditions can propagate out into the solar system, affecting Earth and other worlds. Parker Solar Probe travels through the Sun’s atmosphere, closer to the surface than any spacecraft before it, facing brutal heat and radiation conditions to provide humanity with the closest-ever observations of a star.</p>
             <h4>What's trending on Twitter? <i class="fa fa-twitter" style="font-size:36px"></i></h4>
               <button class="btn btn-primary" onclick="filterTweetsSolarProbe()">#ParkerSolarProbe</button>
               <button class="btn btn-primary" onclick="filterTweetsProbe2()">#ParkerRevolution</button>
