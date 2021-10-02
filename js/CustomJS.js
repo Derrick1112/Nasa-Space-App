@@ -11,8 +11,15 @@ function filterTweetsProbe2 (){
 
     /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
 function myFunction() {
-    var popup1 = document.getElementById("card-parker")
-    var popup2 =  document.getElementById("card-parker-2")
+    var popup1 = document.getElementById("card-parker");
+    var popup2 =  document.getElementById("card-parker-2");
+    popup1.classList.toggle("show");
+    popup2.classList.toggle("show");
+}
+
+function myFunction2() {
+    var popup1 = document.getElementById("card-parker-3");
+    var popup2 =  document.getElementById("card-parker-4");
     popup1.classList.toggle("show");
     popup2.classList.toggle("show");
 }
