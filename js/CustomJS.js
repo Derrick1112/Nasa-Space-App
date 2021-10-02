@@ -88,9 +88,9 @@ function ChangeToStereoInfo() {
 
     probeTitle.textContent = "What is the Stereo Solar Probe?";
     probetext.textContent="STEREO is a solar observation mission. Two nearly identical spacecraft were launched in 2006 into orbits around the Sun that cause them to respectively pull farther ahead of and fall gradually behind the Earth. This enabled stereoscopic imaging of the Sun and solar phenomena, such as coronal mass ejections.";
-    probeInfo1.innerHTML  = "<strong>30/9/2021-5:00AM</strong> - Parker has reported odd solar winds. Cell towers may be affected!";
-    probeInfo2.innerHTML  ="<strong>30/9/2021-10:00AM</strong> - Maintanence work ongoing!";
-    probeInfo3.innerHTML  = "<strong>30/9/2021-1:00PM</strong> - Successful Ninth Solar Flyby for Parker Solar Probe";
+    probeInfo1.innerHTML  = "<strong>29/9/2021-2:00AM</strong> - Corona images updated!";
+    probeInfo2.innerHTML  ="<strong>30/9/2021-3:00AM</strong> - Solar flare detected";
+    probeInfo3.innerHTML  = "<strong>2/10/2021-1:00PM</strong> - Strong solar winds detected";
     twt1.innerText = "#StereoSolarProbe";
     twt2.innerHTML = "#Stereo-A";
     tweetimg1.src = "https://wallpapercave.com/wp/wp4291526.jpg";
@@ -123,6 +123,17 @@ function ChangeToOsirisInfo() {
     var probeInfo1 = document.getElementById("info-probe-1");
     var probeInfo2 = document.getElementById("info-probe-2");
     var probeInfo3 = document.getElementById("info-probe-3");
+    var twt1 = document.getElementById("tweetbtn1");
+    var twt2 = document.getElementById("tweetbtn2");
+    var tweetimg1 = document.getElementById("tweetimg1");
+    var tweetname1 = document.getElementById("tweetname1");
+    var tweetcontent1 = document.getElementById("tweetcontent1");
+    var tweetimg2 = document.getElementById("tweetimg2");
+    var tweetname2 = document.getElementById("tweetname2");
+    var tweetcontent2 = document.getElementById("tweetcontent2");
+    var tweetimg3 = document.getElementById("tweetimg3");
+    var tweetname3 = document.getElementById("tweetname3");
+    var tweetcontent3 = document.getElementById("tweetcontent3");
 	//var probeImg = document.getElementById("probe-img");
 
 	//probeImg.src = "../img/p-osiris.png";
@@ -131,7 +142,17 @@ function ChangeToOsirisInfo() {
     probeInfo1.innerHTML  = "<strong>Jun 04, 2021</strong> - NASA’s OSIRIS-REx spacecraft is 328,000 miles, or 528,000 kilometers, away from the asteroid Bennu, having fired its engines on May 10 to initiate a return trip to Earth. The spacecraft is on track to deliver an asteroid sample to Earth on September 24, 2023.";
     probeInfo2.innerHTML  ="<strong>Mar 29, 2021</strong> - The OSIRIS-REx spacecraft continues to slowly approach asteroid Bennu – traveling approximately 6 cm/s – and is currently about 30 km from the asteroid.";
     probeInfo3.innerHTML  = "<strong>Mar 15, 2021</strong> - OSIRIS-REx continues operating in the Post-TAG Observation phase, as the spacecraft journeys back to Bennu for the Apr. 7 final flyover. On Mar. 6, the spacecraft successfully executed the second propulsive maneuver of 34 cm/s to adjust course as OSIRIS-REx approaches the asteroid. The next maneuver is scheduled for Mar. 20.";
-
+    twt1.innerText = "#OSIRIS-REx";
+    twt2.innerHTML = "#NASAOSIRIS";
+    tweetimg1.src = "https://wallpapercave.com/wp/wp8034237.jpg";
+    tweetname1.innerHTML = "<strong>Armando Carino</strong> @armc91";
+    tweetcontent1.innerText = "The sun looks crazy #OSIRIS-REx";
+    tweetimg2.src = "https://wallpapercave.com/wp/wp6715989.jpg";
+    tweetname2.innerHTML = "<strong>Yanet Garcia</strong> @Yanety";
+    tweetcontent2.innerText = "Que padre #NASAOSIRIS";
+    tweetimg3.src = "https://wallpapercave.com/wp/wp2507022.jpg";
+    tweetname3.innerHTML = "<strong>Anne Hathaway</strong> @hathanneway";
+    tweetcontent3.innerText = "#OSIRIS-REx never thought the sun looked like that";
     probeUpdates.textContent = "Updates from OSIRIS-REx";
     probeImages.src = "https://www.nasa.gov/sites/default/files/thumbnails/image/twelve-image_polycam_mosaic_12-2-18.png";
 
